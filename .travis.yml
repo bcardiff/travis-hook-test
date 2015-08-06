@@ -1,8 +1,7 @@
 language: ruby
 before_install: |
   npm install -g gitbook-cli
-script: |
-  ./build.sh
-after_success: |
-  git status
-  git diff
+script: ./build.sh
+env:
+  global:
+    secure: cQOOeIsmhj+YBlcxNdmNgkX2NfBEe/HTmLjMMhyJ1b7vsscZaIbBXsyulkxAGaLRpkljpZulhZfdpw6phvsxN83qVthsFPOzOFrqm6kVOCNIwMAhaS1vf++EzPEXRHOsb2kp+Nz8xwxMPLcCdamK1YDijK8Vkyrkj+hgRc0mPn4y73TEni0QHDnodqApmI3SAy4dLrkzsLGxYE3A2Cr9zlWhBh+8ItTWSo702rfZ1reBW4SWVIIDcwZFe294ut2eZMyXrLt65YF+tfZQFJ+gpQ1G/xrDuzHSvmRzNvt/eIWBpbOryo1U7A/9YZhS+Vnp7y5K+3rIbCyJPV8keWvG/oJtlW1IArpp9A1ggEF0MYlU1bx870xPjqls+8QjBLondmp8U3lBfuAQdywKEEOpSjNaFFi9R9hLZvg7a/dqJ5VL9F8MTEVqx3VxqNx+Bt1P5QOyzM8K8T1KW2aYVhsYM8brtTWwywODa7kVmsT0Dm7ppAfFk9z2Z19hUudg95GwYH5zXjL7DPhEG8CEuy2733ZCVP6ni7AEyhqzy2n9NJ2a2acDeQTE2o/tlsiG1QljrtNqPKpadN6WPq2g7FnBbzkvZfWDOlkJxpD2XdA+nXR54rzlFlTKsMny8MuJJOBQPZh51c7qQP8Lv72nQi0dV7E94s05pKj+wQAI5bC2f+A=
