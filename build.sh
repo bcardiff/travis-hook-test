@@ -1,3 +1,6 @@
+set -o errexit -o nounset
+rev=$(git rev-parse --short HEAD)
+
 cp ./src/* ./build/
 
 git config --global user.email "bcardiff@manas.com.ar"
