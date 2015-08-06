@@ -1,4 +1,3 @@
-set -o errexit -o nounset
 rev=$(git rev-parse --short HEAD)
 
 cp ./src/* ./build/
