@@ -1,0 +1,8 @@
+language: ruby
+before_install: |
+  npm install -g gitbook-cli
+script: |
+  ./build.sh
+after_success: |
+  git status
+  git diff
